@@ -8,10 +8,11 @@ POST http://localhost:3000/alunos
 Content-Type: application/json
 
 {
-  "nome": "Leonardo Prado",
-  "cod_curso": 1,
-  "email": "LeonardoPrado@example.com",
-  "data_nascimento":"2024-10-01",
+  "nome": "teste",
+  "senha": "leonardogay",
+  "cod_curso": 2,
+  "email": "asfasfasfasfasf@gay.com",
+  "data_nascimento":"2004-10-12T00:00:00.000Z",
   "situacao_aluno": "Matriculado"
 }
 
@@ -25,13 +26,15 @@ DELETE http://localhost:3000/alunos/9
 
 # Requisição PUT
 
-PUT http://localhost:3000/alunos/10
+PUT http://localhost:3000/alunos/21
 Content-Type: application/json
 
 {
-  "nome": "Leonardo Prado de Alvarenga",
-  "cod_curso": 1,
-  "email": "LeonardoPrado@example.com",
-  "data_nascimento":"2024-10-01",
+  "nome": "teste tres",
+  "senha": "$2b$10$jruQOXMfw7B0MN7tIfFw4O5SWZ4qizKDXG50FMxJM4SGeF7rXhC/2",
+  "cod_curso": 2,
+  "email": "asfasfasfasfasf@gay.com",
+  "data_nascimento": "2004-10-12T00:00:00.000Z",
+  "data_inscricao": "2024-09-11T00:00:00.000Z",
   "situacao_aluno": "Matriculado"
 }

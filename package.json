@@ -1,15 +1,19 @@
 {
   "dependencies": {
     "@types/node": "^22.5.4",
-    "dotenv": "^16.4.5",
+    "bcrypt": "^5.1.1",
     "fastify": "^4.28.1",
     "fastify-type-provider-zod": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
     "mssql": "^11.0.1",
     "typescript": "^5.6.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.6",
     "@types/mssql": "^9.1.5",
+    "dotenv": "^16.4.5",
     "tsx": "^4.19.0"
   },
   "name": "backend",
