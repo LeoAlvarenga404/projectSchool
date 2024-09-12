@@ -65,15 +65,3 @@ export const updateAluno = async (cod_aluno: number, nome?: string, senha?: stri
   `);
 }
 
-export const loginUsuario = async ( email: string, senha: string): Promise<any> => {
-  const pool = await conexao()
-  const result = await pool.request()
-  .input('EMAIL', email)
-  .input('SENHA', senha)
-  .query(`
-    SELECT * FROM Aluno
-    WHERE email = @EMAIL
-  `);
-
-  return result.recordset
-}

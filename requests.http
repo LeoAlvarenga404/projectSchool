@@ -8,10 +8,10 @@ POST http://localhost:3000/alunos
 Content-Type: application/json
 
 {
-  "nome": "teste",
-  "senha": "leonardogay",
-  "cod_curso": 2,
-  "email": "asfasfasfasfasf@gay.com",
+  "nome": "admin",
+  "senha": "admin123",
+  "cod_curso": 1,
+  "email": "admin@gmail.com",
   "data_nascimento":"2004-10-12T00:00:00.000Z",
   "situacao_aluno": "Matriculado"
 }
@@ -37,4 +37,16 @@ Content-Type: application/json
   "data_nascimento": "2004-10-12T00:00:00.000Z",
   "data_inscricao": "2024-09-11T00:00:00.000Z",
   "situacao_aluno": "Matriculado"
+}
+
+###
+
+# Login
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "senha": "admin123"
 }

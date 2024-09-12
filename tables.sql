@@ -13,6 +13,7 @@ CREATE TABLE Disciplina (
 CREATE TABLE Aluno (
     cod_aluno INT PRIMARY KEY IDENTITY(1,1),
     nome VARCHAR(100) NOT NULL,
+	senha VARCHAR(MAX) NOT NULL,
     cod_curso INT NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     data_nascimento DATE NOT NULL,
