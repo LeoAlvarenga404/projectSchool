@@ -13,5 +13,4 @@ app.register(authRoutes)
 
 app.listen({ port }).then(() => {
   console.log('Servidor rodando na porta:', port);
-  
 });

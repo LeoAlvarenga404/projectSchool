@@ -4,6 +4,8 @@
     "bcrypt": "^5.1.1",
     "fastify": "^4.28.1",
     "fastify-type-provider-zod": "^2.0.0",
+    "firebase": "^10.13.1",
+    "firebase-admin": "^12.4.0",
     "jsonwebtoken": "^9.0.2",
     "mssql": "^11.0.1",
     "typescript": "^5.6.2",

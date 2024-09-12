@@ -1,7 +1,6 @@
 import { FastifyInstance } from 'fastify';
 import { selectTodosAlunos, insertAluno, deleteAluno, updateAluno, selectAluno } from '../controllers/alunoController';
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken'
 
 import { z } from 'zod';
 
@@ -51,16 +50,20 @@ export const alunoRoutes = async (app: FastifyInstance) => {
     reply.status(201).send({ message: "Aluno criado com sucesso!" })
   });
 
-  app.delete('/alunos/:id', async (req, reply) => {
-   
-      const params = req.params as unknown as { cod_aluno: string };
-      const cod_aluno = parseInt(params.cod_aluno, 10);
+  app.delete('/alunos/:id', async (request, reply) => {
+    const params = request.params as { id: string };
+    const id = parseInt(params.id, 10);
 
-      if (!cod_aluno) {
+    if (!id) {
+      return reply.status(400).send({ error: 'ID inválido' });
+    }
+
+
+      if (!id) {
         return reply.status(400).send({ error: 'ID inválido' });
       }
 
-      await deleteAluno(cod_aluno);
+      await deleteAluno(id);
       reply.status(200).send({ message: 'Aluno removido com sucesso' });
   });
 

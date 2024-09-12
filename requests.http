@@ -20,20 +20,20 @@ Content-Type: application/json
 ###
 
 # Requisição DELETE
-DELETE http://localhost:3000/alunos/9
+DELETE http://localhost:3000/alunos/1
 
 ###
 
 # Requisição PUT
 
-PUT http://localhost:3000/alunos/21
+PUT http://localhost:3000/alunos/4
 Content-Type: application/json
 
 {
-  "nome": "teste tres",
+  "nome": "admin",
   "senha": "$2b$10$jruQOXMfw7B0MN7tIfFw4O5SWZ4qizKDXG50FMxJM4SGeF7rXhC/2",
   "cod_curso": 2,
-  "email": "asfasfasfasfasf@gay.com",
+  "email": "teste@admin.com",
   "data_nascimento": "2004-10-12T00:00:00.000Z",
   "data_inscricao": "2024-09-11T00:00:00.000Z",
   "situacao_aluno": "Matriculado"

@@ -1,4 +1,4 @@
-import { conexao } from '../database/conexao'
+import { conexao } from '../config/conexao'
 
 export const loginUsuario = async ( email: string): Promise<any> => {
   const pool = await conexao()
@@ -11,3 +11,4 @@ export const loginUsuario = async ( email: string): Promise<any> => {
 
   return result.recordset[0]
 }
+

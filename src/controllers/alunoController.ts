@@ -1,4 +1,4 @@
-import { conexao } from '../database/conexao';
+import { conexao } from '../config/conexao';
 
 export const selectTodosAlunos = async (): Promise<any> => {
   const pool = await conexao();
@@ -32,8 +32,6 @@ export const insertAluno = async (nome: string, senha: string, cod_curso: number
     `)
 }
 
-
-
 export const deleteAluno = async (cod_aluno: number): Promise<void> => {
   const pool = await conexao();
   await pool.request()
@@ -64,4 +62,3 @@ export const updateAluno = async (cod_aluno: number, nome?: string, senha?: stri
     WHERE cod_aluno = @COD_ALUNO
   `);
 }
-
